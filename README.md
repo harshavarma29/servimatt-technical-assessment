@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# AI Storyboard Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Generates an image and a descriptive story based on the user’s text prompt using OpenAI’s GPT-4o-mini for text generation and DALL·E 3 for image generation.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- **Frontend:** React (with Module CSS)
+- **AI SDK:** `@ai-sdk/react`, `@ai-sdk/openai`, `ai`, `zod`
+- **Model:** GPT-4o-mini + DALL·E 3  
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Clone the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- https://github.com/harshavarma29/servimatt-technical-assessment.git
+- cd servimatt-technical-assessment
 
-### `npm test`
+### Install Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- npm install
 
-### `npm run build`
+### Set Up Environment Variables
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) Create a .env file in parent directory
+2) Add the following the variable: REACT_APP_OPENAI_API_KEY=your_openai_api_key
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run the App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm start
 
-### `npm run eject`
+Runs the app in the location http://localhost:3000 to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How it Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) Enter a short story idea or phrase in the input box.
+2) GPT-4o-mini generates a short visual storyboard description.
+3) DALL·E 3 creates a corresponding storyboard image.
+4) The app displays appropriate loading indicators and error messages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Example Prompt
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Prompt: Biker escaping from a theft in the desert
+- Result: The app generates a storyboard image along with a descriptive story.
 
-## Learn More
+## Acknowledgements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1) OpenAI – for GPT-4o and DALL·E models
+2) React – for the UI framework
