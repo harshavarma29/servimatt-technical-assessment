@@ -12,7 +12,7 @@
 
 ### Clone the Repository
 
-- https://github.com/harshavarma29/servimatt-technical-assessment.git
+- git clone https://github.com/harshavarma29/servimatt-technical-assessment.git
 - cd servimatt-technical-assessment
 
 ### Install Dependencies
@@ -21,8 +21,8 @@
 
 ### Set Up Environment Variables
 
-1) Create a .env file in parent directory
-2) Add the following the variable: REACT_APP_OPENAI_API_KEY=your_openai_api_key
+1) Create a .env file in the parent directory
+2) Add the following variable: REACT_APP_OPENAI_API_KEY=your_openai_api_key
 
 ### Run the App
 
