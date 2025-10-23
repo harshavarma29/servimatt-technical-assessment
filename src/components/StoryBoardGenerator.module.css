@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 840px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    color: #1061a3;
+}
+
+.outputArea {
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    width: 820px;
+    margin: 70px 0px;
+    display: none;
+}
+
+.outputArea.show {
+    display: block;
+}
+
+.promptInputContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 810px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+}
+
+.promptInput {
+    font-size: 15px;
+    color: #2d2d2d;
+    padding: 8px;
+    border-radius: 8px 0px 0px 8px;
+    width: 400px;
+}
+
+.generateBtn {
+    background: #1061a3;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.yourPrompt {
+    width: 405px;
+    margin: 8px 0px;
+    margin-left: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    padding: 8px;
+    color: #1061a3;
+}
+
+.aiGenerated {
+    margin: 10px 0px;
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.aiGeneratedContent {
+    font-size: 16px;
+    color: #1061a3;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 880px) {
+  .header,
+  .outputArea,
+  .promptInputContainer {
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+
+  .promptInputContainer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .promptInput {
+    width: 96%;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .generateBtn {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  .outputArea {
+    width: 95%;
+    margin: 100px auto;
+    padding: 10px;
+  }
+
+  .yourPrompt {
+    width: auto;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .aiGeneratedContent {
+    font-size: 15px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+}
