@@ -14,6 +14,7 @@
 
 - git clone https://github.com/harshavarma29/servimatt-technical-assessment.git
 - cd servimatt-technical-assessment
+- Run `git checkout master` to switch to the master branch from the main branch
 
 ### Install Dependencies
 
